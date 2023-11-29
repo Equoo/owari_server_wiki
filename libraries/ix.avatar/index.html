@@ -2,13 +2,13 @@
 
 <html>
 	<head>
-		<title>ix.act - Echoes Documentation</title>
+		<title>ix.avatar - Echoes Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="ix.act - Echoes Documentation" />
+		<meta property="og:title" content="ix.avatar - Echoes Documentation" />
 		<meta property="og:site_name" content="Helix Documentation" />
 
-			<meta property="og:description" content="Provides players the ability to perform animations." />
+			<meta property="og:description" content="Avatar system for Helix." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -1176,7 +1176,7 @@ SizeToContentsY											</a>
 									</details>
 							</li>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../libraries/ix.act/">ix.act</a></summary>
 
 									<ul>
@@ -1218,7 +1218,7 @@ SetModelClass											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../libraries/ix.avatar/">ix.avatar</a></summary>
 
 									<ul>
@@ -2705,26 +2705,24 @@ ToggleWepRaised											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>ix.act</h1>
-	<h2>Provides players the ability to perform animations.</h2>
+	<h1>ix.avatar</h1>
+	<h2>Avatar system for Helix.</h2>
 </header>
 
-<p>
-
-</p>
+<p>This system allows you to create custom avatars for your characters.</p>
 
 	<h1 class="title">Functions</h1>
 
 		<section class="method">
 			<header>
-				<a class="anchor" id="ix.act.Register">
-					<h1><span class="realm shared"></span></span>ix.act.Register(name, modelClass, data)</h1>
+				<a class="anchor" id="ix.avatar.Get">
+					<h1><span class="realm shared"></span></span>ix.avatar.Get(ent, class, name)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/helix/plugins/act/sh_plugin.lua#L27">View source &raquo;</a>
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L152">View source &raquo;</a>
 
-					<p>Registers a sequence as a performable animation.</p>
+					<p>Retrieves the value of a specific property from an avatar set.</p>
 			</header>
 
 
@@ -2734,52 +2732,60 @@ ToggleWepRaised											</a>
 					<ul>
 
 							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to retrieve the avatar property from.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar property.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
 								<span class="tag parameter">name</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-								<p> Name of the animation (in CamelCase)</p>
+								<p> (string) The name of the avatar property.</p>
 							</li>
 					</ul>
 
-					<ul>
+
+				<h3>Returns</h3>
+				<ul>
 
 							<li>
-								<span class="tag parameter">modelClass</span>
+									<span class="tag type">any</span>
 
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
-
-
-								<p> Model class to add this animation to</p>
+								<p>The value of the specified avatar property, or nil if it doesn't exist.</p>
 							</li>
-					</ul>
 
-					<ul>
-
-							<li>
-								<span class="tag parameter">data</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.5">table</a></span>
-
-
-								<p> An <code>ActInfoStructure</code> table describing the animation</p>
-							</li>
-					</ul>
-
+				</ul>
 
 
 		</section>
 		<section class="method">
 			<header>
-				<a class="anchor" id="ix.act.Remove">
-					<h1><span class="realm shared"></span></span>ix.act.Remove(name)</h1>
+				<a class="anchor" id="ix.avatar.LoadFromDir">
+					<h1><span class="realm shared"></span></span>ix.avatar.LoadFromDir(directory)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/helix/plugins/act/sh_plugin.lua#L64">View source &raquo;</a>
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L41">View source &raquo;</a>
 
-					<p>Removes a sequence from being performable if it has been previously registered.</p>
+					<p>Load avatar objects from a directory.</p>
 			</header>
 
 
@@ -2789,16 +2795,19 @@ ToggleWepRaised											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">name</span>
+								<span class="tag parameter">directory</span>
 
 									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
 
 
-								<p> Name of the animation</p>
+								<p> location</p>
 							</li>
 					</ul>
 
 
+				<h3>Example Usage</h3>
+					<pre><code>ix.anim.LoadFromDir(engine.ActiveGamemode() .. "/schema/avatar")
+</code></pre>
 
 		</section>
 
