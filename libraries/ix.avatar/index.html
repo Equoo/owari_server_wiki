@@ -1231,13 +1231,63 @@ Add											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.CreateMaterials">
+CreateMaterials											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.Del">
+Del											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../libraries/ix.avatar/#ix.avatar.Get">
 Get											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.GetObject">
+GetObject											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.GetProperties">
+GetProperties											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.GetSet">
+GetSet											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
 											<a href="../../libraries/ix.avatar/#ix.avatar.LoadFromDir">
 LoadFromDir											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.RefreshMaterials">
+RefreshMaterials											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.RefreshMdlMaterials">
+RefreshMdlMaterials											</a>
+										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.Send">
+Send											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.Set">
+Set											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.getModel">
+getModel											</a>
 										</li>
 
 									</ul>
@@ -2725,7 +2775,7 @@ ToggleWepRaised											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L212">View source &raquo;</a>
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L223">View source &raquo;</a>
 
 					<p>Adds an avatar class to an entity.</p>
 			</header>
@@ -2761,12 +2811,98 @@ ToggleWepRaised											</a>
 		</section>
 		<section class="method">
 			<header>
+				<a class="anchor" id="ix.avatar.CreateMaterials">
+					<h1><span class="realm shared"></span></span>ix.avatar.CreateMaterials(ent, class)</h1>
+				</a>
+
+					<div class="notice error">
+						<div class="title">Internal</div>
+						<p>This is an internal function! You are able to use it, but you risk unintended side effects if used incorrectly.</p>
+					</div>
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L604">View source &raquo;</a>
+
+					<p>Creates the materials for an avatar part.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to create the materials for.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar part to create the materials for.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.Del">
+					<h1><span class="realm shared"></span></span>ix.avatar.Del(ent, class)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L304">View source &raquo;</a>
+
+					<p>Removes an avatar class from an entity.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to remove the avatar class from.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar to remove.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
 				<a class="anchor" id="ix.avatar.Get">
 					<h1><span class="realm shared"></span></span>ix.avatar.Get(ent, class, name)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L153">View source &raquo;</a>
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L162">View source &raquo;</a>
 
 					<p>Retrieves the value of a specific property from an avatar set.</p>
 			</header>
@@ -2824,6 +2960,129 @@ ToggleWepRaised											</a>
 		</section>
 		<section class="method">
 			<header>
+				<a class="anchor" id="ix.avatar.GetObject">
+					<h1><span class="realm shared"></span></span>ix.avatar.GetObject(ent, class)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L459">View source &raquo;</a>
+
+					<p>Returns the object of an avatar class.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to get the avatar object from.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar to get the object from.</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="tag type">any</span>
+
+								<p>(Entity) The object of the avatar class.</p>
+							</li>
+
+				</ul>
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.GetProperties">
+					<h1><span class="realm shared"></span></span>ix.avatar.GetProperties(ent, class)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L329">View source &raquo;</a>
+
+					<p>Gets the properties of an avatar class from an entity.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to get the avatar class properties from.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar to get the properties from.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.GetSet">
+					<h1><span class="realm shared"></span></span>ix.avatar.GetSet(ent)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L341">View source &raquo;</a>
+
+					<p>Return the avatar set of an entity.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to get the avatar set from.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
 				<a class="anchor" id="ix.avatar.LoadFromDir">
 					<h1><span class="realm shared"></span></span>ix.avatar.LoadFromDir(directory)</h1>
 				</a>
@@ -2854,6 +3113,200 @@ ToggleWepRaised											</a>
 				<h3>Example Usage</h3>
 					<pre><code>ix.anim.LoadFromDir(engine.ActiveGamemode() .. "/schema/avatar")
 </code></pre>
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.RefreshMaterials">
+					<h1><span class="realm shared"></span></span>ix.avatar.RefreshMaterials()</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L660">View source &raquo;</a>
+
+					<p>Refreshes the materials of all avatars.</p>
+			</header>
+
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.RefreshMdlMaterials">
+					<h1><span class="realm shared"></span></span>ix.avatar.RefreshMdlMaterials(mdl)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L648">View source &raquo;</a>
+
+					<p>Refreshes the materials of an avatar part.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">mdl</span>
+
+
+
+								<p> (Entity) The avatar part to refresh the materials of.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.Send">
+					<h1><span class="realm server"></span></span>ix.avatar.Send(client)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L84">View source &raquo;</a>
+
+					<p>Sync all avatars to a client.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
+
+									<span class="tag"><a class="type" href="../../classes/player/#">Player</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.Set">
+					<h1><span class="realm shared"></span></span>ix.avatar.Set(ent, class, name, value)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L129">View source &raquo;</a>
+
+					<p>Sets the value of a specific property in an avatar set.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">ent</span>
+
+
+
+								<p> (Entity) The entity to set the avatar property for.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar property.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">name</span>
+
+
+
+								<p> (string) The name of the avatar property.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">value</span>
+
+
+
+								<p> The value to set the avatar property to.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.getModel">
+					<h1><span class="realm shared"></span></span>ix.avatar.getModel(class, variant)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/Equoo/owari_gm_server/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_avatar.lua#L449">View source &raquo;</a>
+
+					<p>Returns the model of an avatar class.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">class</span>
+
+
+
+								<p> (string) The class of the avatar to get the model of.</p>
+							</li>
+					</ul>
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">variant</span>
+
+
+
+								<p> (string) The variant of the avatar to get the model of.</p>
+							</li>
+					</ul>
+
+
+				<h3>Returns</h3>
+				<ul>
+
+							<li>
+									<span class="tag type">any</span>
+
+								<p>(string) The model of the avatar class.</p>
+							</li>
+
+				</ul>
+
 
 		</section>
 
