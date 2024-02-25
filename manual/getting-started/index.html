@@ -35,75 +35,125 @@ It&#39;s pretty easy to get started with creating your own schema with Helix. It
 					<ul>
 							<li>
 									<details >
-									<summary><a href="../index/">ix.avatar</a></summary>
+									<summary><a href="../../libraries/ix.avatar/">ix.avatar</a></summary>
 
 									<ul>
 
 
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.Add">
+											<a href="../../libraries/ix.avatar/#ix.avatar.Add">
 Add											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.CreateMaterials">
+											<a href="../../libraries/ix.avatar/#ix.avatar.CreateMaterials">
 CreateMaterials											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.Del">
+											<a href="../../libraries/ix.avatar/#ix.avatar.Del">
 Del											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.Get">
+											<a href="../../libraries/ix.avatar/#ix.avatar.Get">
 Get											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.GetObject">
+											<a href="../../libraries/ix.avatar/#ix.avatar.GetObject">
 GetObject											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.GetProperties">
+											<a href="../../libraries/ix.avatar/#ix.avatar.GetProperties">
 GetProperties											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.GetSet">
+											<a href="../../libraries/ix.avatar/#ix.avatar.GetSet">
 GetSet											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.LoadFromDir">
+											<a href="../../libraries/ix.avatar/#ix.avatar.LoadFromDir">
 LoadFromDir											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.RefreshMaterials">
+											<a href="../../libraries/ix.avatar/#ix.avatar.RefreshMaterials">
 RefreshMaterials											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.RefreshMdlMaterials">
+											<a href="../../libraries/ix.avatar/#ix.avatar.RefreshMdlMaterials">
 RefreshMdlMaterials											</a>
 										</li>
 										<li>
 											<span class="realm server"></span>
-											<a href="../index/#ix.avatar.Send">
+											<a href="../../libraries/ix.avatar/#ix.avatar.Send">
 Send											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.Set">
+											<a href="../../libraries/ix.avatar/#ix.avatar.Set">
 Set											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
-											<a href="../index/#ix.avatar.getModel">
+											<a href="../../libraries/ix.avatar/#ix.avatar.getModel">
 getModel											</a>
+										</li>
+
+									</ul>
+									</details>
+							</li>
+							<li>
+									<details >
+									<summary><a href="../../libraries/mouth/">mouth</a></summary>
+
+									<ul>
+
+
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/mouth/#anm.GetModelClass">
+anm.GetModelClass											</a>
+										</li>
+										<li>
+											<span class="realm shared"></span>
+											<a href="../../libraries/mouth/#anm.SetModelClass">
+anm.SetModelClass											</a>
+										</li>
+
+									</ul>
+									</details>
+							</li>
+					</ul>
+				</details>
+				<details class="category" open>
+					<summary>
+						<h2>Classes</h2>
+					</summary>
+
+					<ul>
+							<li>
+									<details >
+									<summary><a href="../../classes/player/">Player</a></summary>
+
+									<ul>
+
+
+										<li>
+											<span class="realm server"></span>
+											<a href="../../classes/player/#ForceSequence">
+ForceSequence											</a>
+										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../classes/player/#LeaveSequence">
+LeaveSequence											</a>
 										</li>
 
 									</ul>
@@ -118,13 +168,13 @@ getModel											</a>
 
 					<ul>
 							<li>
-									<a href="../manual/converting-from-clockwork/">Clockwork to Helix Migration</a>
+									<a href="../../manual/converting-from-clockwork/">Clockwork to Helix Migration</a>
 
 
 
 							</li>
 							<li>
-									<a href="../manual/getting-started/">Getting Started</a>
+									<a href="../../manual/getting-started/">Getting Started</a>
 
 
 
@@ -188,7 +238,7 @@ getModel											</a>
 <p>Next up is to modify the gamemode info so that Garry's Mod will properly recognize it. Rename <code>skeleton.txt</code> in your schema folder to your folder's name. In our example we would rename <code>skeleton.txt</code> to <code>myschema.txt</code>. Next, you'll need to modify the contents of <code>myschema.txt</code> and replace the existing information with your own - making sure to replace the <code>&quot;skeleton&quot;</code> at the top of the file to your folder's name. In our case we would replace it with <code>&quot;myschema&quot;</code>. Once you've renamed the file, you're all good to go!</p>
 
 <h1>Converting from Clockwork (Intermediate)</h1>
-<p>If you are looking to switch to Helix from Clockwork, you can follow the <a href="../manual/converting-from-clockwork/#">conversion guide</a>.</p>
+<p>If you are looking to switch to Helix from Clockwork, you can follow the <a href="../../manual/converting-from-clockwork/#">conversion guide</a>.</p>
 
 <h1>Starting from scratch (Intermediate)</h1>
 <p>You can always create the gamemode files yourself if you'd like (although we suggest the skeleton schema in general). In general, a schema is a gamemode that is derived from <code>helix</code> and automatically loads <code>schema/sh_schema.lua</code>. You shouldn't have your schema files outside of the <code>schema</code> folder. The files you'll need are as follows:</p>
