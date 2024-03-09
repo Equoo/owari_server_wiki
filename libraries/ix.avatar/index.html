@@ -90,14 +90,14 @@ RefreshMaterials											</a>
 RefreshMdlMaterials											</a>
 										</li>
 										<li>
-											<span class="realm server"></span>
-											<a href="../../libraries/ix.avatar/#ix.avatar.Send">
-Send											</a>
-										</li>
-										<li>
 											<span class="realm shared"></span>
 											<a href="../../libraries/ix.avatar/#ix.avatar.Set">
 Set											</a>
+										</li>
+										<li>
+											<span class="realm server"></span>
+											<a href="../../libraries/ix.avatar/#ix.avatar.Sync">
+Sync											</a>
 										</li>
 										<li>
 											<span class="realm shared"></span>
@@ -199,11 +199,11 @@ LeaveSequence											</a>
 		<section class="method">
 			<header>
 				<a class="anchor" id="ix.avatar.Add">
-					<h1><span class="realm shared"></span></span>ix.avatar.Add(ent, class)</h1>
+					<h1><span class="realm shared"></span></span>ix.avatar.Add(ent, class, noBroadcast)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L351">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L320">View source &raquo;</a>
 
 					<p>Adds an avatar class to an entity.</p>
 			</header>
@@ -234,6 +234,17 @@ LeaveSequence											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">noBroadcast</span>
+
+
+
+								<p> Does the server broadcast.</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -248,7 +259,7 @@ LeaveSequence											</a>
 						<p>This is an internal function! You are able to use it, but you risk unintended side effects if used incorrectly.</p>
 					</div>
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L734">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L691">View source &raquo;</a>
 
 					<p>Creates the materials for an avatar part.</p>
 			</header>
@@ -285,11 +296,11 @@ LeaveSequence											</a>
 		<section class="method">
 			<header>
 				<a class="anchor" id="ix.avatar.Del">
-					<h1><span class="realm shared"></span></span>ix.avatar.Del(ent, class)</h1>
+					<h1><span class="realm shared"></span></span>ix.avatar.Del(ent, class, noBroadcast)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L434">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L402">View source &raquo;</a>
 
 					<p>Removes an avatar class from an entity.</p>
 			</header>
@@ -320,6 +331,17 @@ LeaveSequence											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">noBroadcast</span>
+
+
+
+								<p> Does the server broadcast.</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -330,7 +352,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L288">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L253">View source &raquo;</a>
 
 					<p>Retrieves the value of a specific property from an avatar set.</p>
 			</header>
@@ -393,7 +415,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L604">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L569">View source &raquo;</a>
 
 					<p>Returns the object of an avatar class.</p>
 			</header>
@@ -445,7 +467,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L463">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L436">View source &raquo;</a>
 
 					<p>Gets the properties of an avatar class from an entity.</p>
 			</header>
@@ -486,7 +508,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L475">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L448">View source &raquo;</a>
 
 					<p>Return the avatar set of an entity.</p>
 			</header>
@@ -516,7 +538,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L180">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L174">View source &raquo;</a>
 
 					<p>Load avatar objects from a directory.</p>
 			</header>
@@ -550,7 +572,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L801">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L758">View source &raquo;</a>
 
 					<p>Refreshes the materials of all avatars.</p>
 			</header>
@@ -566,7 +588,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L787">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L744">View source &raquo;</a>
 
 					<p>Refreshes the materials of an avatar part.</p>
 			</header>
@@ -591,45 +613,12 @@ LeaveSequence											</a>
 		</section>
 		<section class="method">
 			<header>
-				<a class="anchor" id="ix.avatar.Send">
-					<h1><span class="realm server"></span></span>ix.avatar.Send(client)</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L207">View source &raquo;</a>
-
-					<p>Sync all avatars to a client.</p>
-			</header>
-
-
-					<h3>Parameters</h3>
-
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">client</span>
-
-									<span class="tag"><a class="type" href="../../classes/player/#">Player</a></span>
-
-
-								<p>
-
-</p>
-							</li>
-					</ul>
-
-
-
-		</section>
-		<section class="method">
-			<header>
 				<a class="anchor" id="ix.avatar.Set">
-					<h1><span class="realm shared"></span></span>ix.avatar.Set(ent, class, name, value)</h1>
+					<h1><span class="realm shared"></span></span>ix.avatar.Set(ent, class, name, value, noBroadcast)</h1>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L252">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L218">View source &raquo;</a>
 
 					<p>Sets the value of a specific property in an avatar set.</p>
 			</header>
@@ -682,6 +671,50 @@ LeaveSequence											</a>
 							</li>
 					</ul>
 
+					<ul>
+
+							<li>
+								<span class="tag parameter">noBroadcast</span>
+
+
+
+								<p> Does the server broadcast.</p>
+							</li>
+					</ul>
+
+
+
+		</section>
+		<section class="method">
+			<header>
+				<a class="anchor" id="ix.avatar.Sync">
+					<h1><span class="realm server"></span></span>ix.avatar.Sync(client)</h1>
+				</a>
+
+
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L201">View source &raquo;</a>
+
+					<p>Sync all avatars to a client.</p>
+			</header>
+
+
+					<h3>Parameters</h3>
+
+
+					<ul>
+
+							<li>
+								<span class="tag parameter">client</span>
+
+									<span class="tag"><a class="type" href="../../classes/player/#">Player</a></span>
+
+
+								<p>
+
+</p>
+							</li>
+					</ul>
+
 
 
 		</section>
@@ -692,7 +725,7 @@ LeaveSequence											</a>
 				</a>
 
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L593">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_avatar.lua#L558">View source &raquo;</a>
 
 					<p>Returns the model of an avatar class.</p>
 			</header>
