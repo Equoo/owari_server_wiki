@@ -2,13 +2,13 @@
 
 <html>
 	<head>
-		<title>Player - Echoes Documentation</title>
+		<title>ix.rootmotion - Echoes Documentation</title>
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Player - Echoes Documentation" />
+		<meta property="og:title" content="ix.rootmotion - Echoes Documentation" />
 		<meta property="og:site_name" content="Helix Documentation" />
 
-			<meta property="og:description" content="Player anim methods" />
+			<meta property="og:description" content="Root motion system for Garry&#39;s Mod." />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
 		<link rel="stylesheet" href="../../ldoc.css" />
@@ -114,7 +114,7 @@ getModel											</a>
 									</details>
 							</li>
 							<li>
-									<details >
+									<details open>
 									<summary><a href="../../libraries/ix.rootmotion/">ix.rootmotion</a></summary>
 
 									<ul>
@@ -159,7 +159,7 @@ anm.SetModelClass											</a>
 
 					<ul>
 							<li>
-									<details open>
+									<details >
 									<summary><a href="../../classes/player/">Player</a></summary>
 
 									<ul>
@@ -209,27 +209,28 @@ LeaveSequence											</a>
 					<div class="wrapper">
 
 <header class="module">
-	<h1>Player</h1>
-	<h2>Player anim methods</h2>
+	<h1>ix.rootmotion</h1>
+	<h2>Root motion system for Garry's Mod.</h2>
 </header>
 
-<p>
-
-</p>
+<p>Root motion is a technique used in video game development in which the movement of a character is controlled by the animation itself. This is in contrast to traditional methods of controlling character movement using a separate system, such as the physics engine.</p>
 
 	<h1 class="title">Functions</h1>
 
 		<section class="method">
 			<header>
-				<a class="anchor" id="ForceSequence">
-					<h1><span class="realm server"></span></span>Player:ForceSequence(sequence, callback, time, bNoFreeze)</h1>
+				<a class="anchor" id="rm.PlayRootMotion">
+					<h1><span class="realm shared"></span></span>rm.PlayRootMotion(ply, sqc)</h1>
 				</a>
 
+					<div class="notice error">
+						<div class="title">Internal</div>
+						<p>This is an internal function! You are able to use it, but you risk unintended side effects if used incorrectly.</p>
+					</div>
 
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_anim.lua#L1118">View source &raquo;</a>
+					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_rootmotion.lua#L76">View source &raquo;</a>
 
-					<p>Forces this player's model to play an animation sequence.  It also prevents the player from firing their weapon while the
- animation is playing.</p>
+					<p>Play a root motion on a player.</p>
 			</header>
 
 
@@ -239,74 +240,24 @@ LeaveSequence											</a>
 					<ul>
 
 							<li>
-								<span class="tag parameter">sequence</span>
-
-									<span class="tag"><a class="type" href="https://www.lua.org/manual/5.2/manual.html#6.4">string</a></span>
+								<span class="tag parameter">ply</span>
 
 
-								<p> Name of the animation sequence to play</p>
+
+								<p> Player The player to play the root motion on.</p>
 							</li>
 					</ul>
 
 					<ul>
 
 							<li>
-								<span class="tag parameter">callback</span>
+								<span class="tag parameter">sqc</span>
 
-									<span class="tag"><span class="type">function</span></span>
 
-									<span class="tag default">default: nil</span>
 
-								<p> Function to call when the animation finishes. This is also called immediately if the animation
- fails to play</p>
+								<p> string/number The sequence name or ID to play.</p>
 							</li>
 					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">time</span>
-
-									<span class="tag"><span class="type">number</span></span>
-
-									<span class="tag default">default: nil</span>
-
-								<p> How long to play the animation for. This defaults to the duration of the animation</p>
-							</li>
-					</ul>
-
-					<ul>
-
-							<li>
-								<span class="tag parameter">bNoFreeze</span>
-
-									<span class="tag"><span class="type">boolean</span></span>
-
-									<span class="tag default">default: false</span>
-
-								<p> Whether or not to avoid freezing this player in place while the animation is playing</p>
-							</li>
-					</ul>
-
-
-
-				<h3>See Also</h3>
-				<ul>
-						<li><a href="../../classes/player/#LeaveSequence">LeaveSequence</a></li>
-				</ul>
-		</section>
-		<section class="method">
-			<header>
-				<a class="anchor" id="LeaveSequence">
-					<h1><span class="realm server"></span></span>Player:LeaveSequence()</h1>
-				</a>
-
-
-					<a class="reference" href="https://github.com/nebulouscloud/helix/tree/master/home/runner/work/owari_gm_server/owari_gm_server/owari_gm_server/gamemodes/mangarp/schema/libs/sh_cry_anim.lua#L1170">View source &raquo;</a>
-
-					<p>Forcefully stops this player's model from playing an animation that was started by <a href="../../classes/player/#ForceSequence">ForceSequence</a>.</p>
-			</header>
-
 
 
 
